@@ -1,22 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
+    <meta charset="UTF-8">
+    <title>Liekang Zeng, PhD@SYSU</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* 改为靠左对齐 */
+        }
+        header {
+            display: flex;
+            justify-content: space-between; /* 保持头部两端对齐 */
+            align-items: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .profile-pic {
+            height: 200px;
+            width: auto;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        h1, h2, p, ul {
+            color: #333;
+            text-align: left; /* 文本靠左对齐 */
+            width: 100%; /* 宽度调整为100% */
+        }
+        a {
+            color: #0077cc;
+        }
+		.red-text {
+            color: red;  /* Red text class for highlighting specific parts of the text */
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-      <a href="{{ '/' | relative_url }}">Home</a>
-    </nav>
-  </header>
-  <main>
-    {{ content }}
-  </main>
-  <footer>
-    © {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
-  </footer>
+    <header>
+        <div>
+            <h1>Mulei Ma, Ph.D.</h1>
+            <h2> </h2>
+        </div>
+        <img src="photo.jpg" alt="Liekang Zeng" class="profile-pic">
+    </header>
+    <p><strong>Position:</strong> Ph.D.<br>
+    <strong>Institute:</strong> IoT Thrust and Research Center for Digital World with Intelligent Things (DOIT)<br>
+    <strong>School:</strong> Hong Kong University of Science and Technology Guangzhou<br>
+    <strong>Location:</strong> No. 1, Duxue Road, Nansha District, Guangzhou, China<br>
+    <strong>Email:</strong> <a href="mailto:mma085@connect.hkust-gz.edu.cn">mma085@connect.hkust-gz.edu.cn</a><br>
+    <strong>Links:</strong> <a href="https://github.com/MaLeiOnline">GitHub</a>, <a href="https://dblp1.uni-trier.de/pid/320/8373.html">dblp</a>, <a href="https://ieeexplore.ieee.org/author/37089680644">IEEE</a></p>
+    <h2>Biography</h2>
+    <p>Mulei Ma received the B.S. degree in computer science and technology from the Southern University of Science and Technology, Shenzhen, China, in 2020. Received the master’s degree with the School of Information Science and Technology, ShanghaiTech University, Shanghai, China. He is currently pursuing PhD degree in IoT Thrust and Research Center for Digital World with Intelligent Things (DOIT), Hong Kong University of Science and Technology Guangzhou, China, supervised by Prof. Yang Yang.</p>
+    <h2>Research Interests</h2>
+    <p>My research interests include edge intelligence, Resource Allocation, Large Language Model and IoT.</p>
+    <!-- <h2>News</h2> -->
+    <!-- <ul> -->
+    <!--     <li>[2024] Paper on the vision of collaborative edge computing...</li> -->
+    <!--     <li>[2024] Paper on cluster data analysis accepted...</li> -->
+    <!-- </ul> -->
+    <h2>Publications</h2>
+    <ul>
+        <li><span class="red-text">M. Ma</span>, C. Gong, Y. Yang and L. Zeng, " MOGR: Multi-task Offloading via Graph Representation in Heterogeneous Computing Network," in IEEE ICC, 2024.</li>
+        <li><span class="red-text">M. Ma</span>, C. Gong, L. Wu and Y. Yang, "FLIRRAS: Fast Learning with Integrated Reward and Reduced Action Space for Online Multi-Task Offloading," in IEEE Internet of Things Journal, 2022.</li>
+		<li><span class="red-text">M. Ma</span>, L. Wu, W. Liu, N. Chen, Z. Shao and Y. Yang, "Data-aware Hierarchical Federated Learning via Task Offloading," GLOBECOM 2022 - 2022 IEEE Global Communications Conference, Rio de Janeiro, Brazil, 2022, pp. 1-6.</li>
+		<li><span class="red-text">M. Ma</span>, C. Gong, Y. Yang, Y. Gao and K. Li, "Modeling of Diverse Computing Requirements in Azure Task Traces," 2023 IEEE ICC Workshop.</li>
+		<li>Y. Yang, <span class="red-text">M. Ma</span>, Wu. H. et al., "6G Network AI Architecture for Everyone-Centric Customized Services," in IEEE Network, doi: 10.1109/MNET.124.2200241.</li>
+		<li>C. Gong, <span class="red-text">M. Ma</span>, L. Wu, W. Liu, Y. Zhou and Y. Yang, "Task Offloading and Resource Allocation in CPU-GPU Heterogeneous Networks," GLOBECOM 2022 - 2022 IEEE Global Communications Conference, Rio de Janeiro, Brazil, 2022, pp. 4492-4497.</li>
+    </ul>
+    <h2>Awards</h2>
+    <ul>
+		<li>[2024] HKUST(GZ) Research Travel Grant</li>
+        <li>[2023] National Scholarship</li>
+    </ul>
+    <h2>Working Experience</h2>
+    <p>Huawei Technology Co., Ltd. Machine Vision Department in Shenzhen (Sep. 2019 - Mar. 2020)</p>
+    <h2>Academic Services</h2>
+	<ul>
+	  <li>
+		<strong>Program Committee Member</strong>
+		<ul>
+			<li>Distributed AI (DAI), 2023</li>
+			<li>International Conference on Data, Information and Computing Science (CDICS), 2023</li>
+			<li>International Conference on Big Data and Machine Learning (BDML), 2023</li>
+		</ul>
+	  </li>
+	  <li>
+		<strong>Journal/Conference Reviewer</strong>
+		<ul>
+		  <li>IEEE Transactions on Network Science and Engineering</li>
+		  <li>IEEE Network</li>
+		  <li>IEEE Internet of Things Journal</li>
+		  <li>IEEE International Conference on Communications</li>
+		</ul>
+	  </li>
+	</ul>
+
 </body>
 </html>
